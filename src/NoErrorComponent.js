@@ -1,7 +1,8 @@
-import withErrorBoundary from "./withErrorBoundary";
+import React from "react";
+import { useState } from "react";
 
-function NoErrorComponent() {
-  return <div>No Error Here!! I'm displaying.</div>;
+function NoErrorComponent({ hasError = false }) {
+  return <div>No Error Component</div>;
 }
 
-export default withErrorBoundary(NoErrorComponent);
+export default NoErrorComponent;
